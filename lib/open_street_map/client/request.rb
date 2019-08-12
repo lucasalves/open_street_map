@@ -20,7 +20,7 @@ module OpenStreetMap
       # get list of permitted args
       def valid_args(type)
         case type
-          when 'search' then %i[q format addressdetails extratags namedetails viewbox bounded exclude_place_ids limit accept-language email street city_district city state]
+          when 'search' then %i[q format addressdetails extratags namedetails viewbox bounded exclude_place_ids limit accept-language email street city_district city state polygon_geojson]
           when 'reverse' then %i[format lat lon zoom addressdetails extratags namedetails accept-language email]
           else []
         end
